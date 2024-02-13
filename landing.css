@@ -23,16 +23,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-image: url(img/logo.png) ;  */
-    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
+    display: flex;
+    flex-direction: column;
 }
 
 .container h2{
     color:#aaaaaa;
-    padding: 15px;
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+.container h1{
+    color: #F99325;
+    font-size: 2.5rem;
 }
 
 .button{
@@ -43,6 +46,7 @@
     font-size: 30px;
     font-weight: bold;
     border-radius: 1rem;
+    margin-top: 20px;
     border: none;
     box-shadow: 10px 10px 5px #ccc;
     transition-duration: 300ms;
@@ -64,6 +68,12 @@ height: 4.5rem;
 
 
 @media (max-width: 425px) {
+.container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+
     .button{
         width: 16rem;
         height: 3.5rem;
